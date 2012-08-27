@@ -1,0 +1,112 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	display:block;
+}
+
+/* 0. General Styles
+-------------------------------------------------------------------------- */
+
+body {
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+#wrap {
+	margin: 0 auto;
+	width: 960px;
+}
+	
+/* 1. Gallery Styles
+-------------------------------------------------------------------------- */
+
+div.gallery {
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	margin: 100px auto 0;
+	border: 1px solid silver;
+}
+
+div.gallery div.slider {
+	position: absolute;
+	left: 0;
+}
+
+div.gallery div.slider figure {
+	float: left;
+	overflow: hidden;
+}
+
+div.gallery div.controls {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+div.gallery div.controls a.control {
+	display: block;
+	position: absolute;
+	width: 40px;
+	height: 80px;
+	text-indent: -9999em;
+}
+
+div.gallery div.controls .control.momentary {
+	opacity: 0.0;
+	-webkit-transition: opacity 0.25s ease-in-out;
+}
+
+div.gallery:hover div.controls .control.momentary {
+	opacity: 1.0;
+}
+
+div.gallery div.controls a.control-previous {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(img/prev.png);
+}
+
+div.gallery div.controls a.control-next {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(img/next.png);
+}
+
+div.gallery div.controls ul.pages {
+	height: 16px;
+	text-align: center;
+	overflow: hidden;
+}
+
+div.gallery div.controls ul.pages li {
+	float: left;
+	display: block;
+}
+
+div.gallery div.controls ul.pages li a {
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-color: lime;
+	margin: 0 4px;
+	border-radius: 20px;
+	text-indent: -9999em;
+}
+
+div.gallery div.controls ul.pages li a.active {
+	background-color: red;
+}
